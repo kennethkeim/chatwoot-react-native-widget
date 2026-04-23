@@ -1,4 +1,4 @@
-declare module '@chatwoot/react-native-widget' {
+declare module '@kennethkeim/chatwoot-react-native-widget' {
   import React from 'react';
 
   export interface ChatWootWidgetProps {

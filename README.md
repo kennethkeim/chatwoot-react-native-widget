@@ -2,12 +2,7 @@
 chatwoot-react-native-widget
 </h1>
 
-This is a fork of https://www.npmjs.com/package/@chatwoot/react-native-widget
-
-![](https://img.shields.io/npm/v/@chatwoot/react-native-widget?style=flat)
-![](https://img.shields.io/npm/dt/@chatwoot/react-native-widget.svg)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-![](https://img.shields.io/npm/l/@chatwoot/@chatwoot/react-native-widget)
+This is a fork of https://www.npmjs.com/package/@kennethkeim/chatwoot-react-native-widget
 
 - **Supported Chatwoot version:** 2.16.0+
 
@@ -18,13 +13,13 @@ This is a fork of https://www.npmjs.com/package/@chatwoot/react-native-widget
 Install the library using either yarn or npm like so:
 
 ```sh
-yarn add @chatwoot/react-native-widget
+yarn add @kennethkeim/chatwoot-react-native-widget
 ```
 
 OR
 
 ```sh
-npm install --save @chatwoot/react-native-widget
+npm install --save @kennethkeim/chatwoot-react-native-widget
 ```
 
 This library depends on [react-native-webview](https://www.npmjs.com/package/react-native-webview) and [async-storage](https://github.com/react-native-async-storage/async-storage). Please follow the instructions provided in the docs.
@@ -48,7 +43,7 @@ import React, { useState } from 'react';
 
 import { StyleSheet, View, SafeAreaView, TouchableOpacity, Text } from 'react-native';
 
-import ChatWootWidget from '@chatwoot/react-native-widget';
+import ChatWootWidget from '@kennethkeim/chatwoot-react-native-widget';
 
 const App = () => {
   const [showWidget, toggleWidget] = useState(false);

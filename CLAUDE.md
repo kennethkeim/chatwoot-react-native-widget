@@ -4,7 +4,7 @@
 This is a React Native widget library for integrating Chatwoot chat functionality into React Native applications. It provides a WebView-based chat interface that connects to Chatwoot server installations.
 
 ## Key Information
-- **Package**: @chatwoot/react-native-widget
+- **Package**: @kennethkeim/chatwoot-react-native-widget
 - **Supported Chatwoot version**: 2.16.0+
 - **Main dependencies**: react-native-webview, async-storage
 - **Current branch**: develop
