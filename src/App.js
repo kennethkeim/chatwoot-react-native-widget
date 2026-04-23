@@ -72,12 +72,7 @@ const ChatWootWidget = ({
         paddingRight: insets.right,
       }]} />
 
-      <View style={[styles.mainView, { backgroundColor: mainBackgroundColor }, {
-        paddingBottom: insets.bottom,
-        paddingTop: insets.top,
-        paddingLeft: insets.left,
-        paddingRight: insets.right,
-      }]}>
+      <View style={[styles.mainView, { backgroundColor: mainBackgroundColor }]}>
         <WebView
           websiteToken={websiteToken}
           cwCookie={cwCookie}
