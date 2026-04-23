@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { SafeAreaView, Appearance } from 'react-native';
+import { View, Appearance } from 'react-native';
 import Modal from 'react-native-modal';
 import PropTypes from 'prop-types';
 import { storeHelper, findColors } from './utils';
@@ -22,6 +22,12 @@ const propTypes = {
   colorScheme: PropTypes.oneOf(['dark', 'light', 'auto']),
   customAttributes: PropTypes.shape({}),
   closeModal: PropTypes.func,
+  insets: PropTypes.shape({
+    bottom: PropTypes.number,
+    top: PropTypes.number,
+    left: PropTypes.number,
+    right: PropTypes.number,
+  })
 };
 
 const ChatWootWidget = ({
@@ -33,6 +39,7 @@ const ChatWootWidget = ({
   colorScheme = 'light',
   customAttributes = {},
   closeModal,
+  insets
 }) => {
   const [cwCookie, setCookie] = useState('');
 
@@ -57,8 +64,20 @@ const ChatWootWidget = ({
       onBackButtonPress={closeModal}
       onBackdropPress={closeModal}
       style={styles.modal}>
-      <SafeAreaView style={[styles.headerView, { backgroundColor: headerBackgroundColor }]} />
-      <SafeAreaView style={[styles.mainView, { backgroundColor: mainBackgroundColor }]}>
+
+      <View style={[styles.headerView, { backgroundColor: headerBackgroundColor }, {
+        paddingBottom: insets.bottom,
+        paddingTop: insets.top,
+        paddingLeft: insets.left,
+        paddingRight: insets.right,
+      }]} />
+
+      <View style={[styles.mainView, { backgroundColor: mainBackgroundColor }, {
+        paddingBottom: insets.bottom,
+        paddingTop: insets.top,
+        paddingLeft: insets.left,
+        paddingRight: insets.right,
+      }]}>
         <WebView
           websiteToken={websiteToken}
           cwCookie={cwCookie}
@@ -69,7 +88,7 @@ const ChatWootWidget = ({
           customAttributes={customAttributes}
           closeModal={closeModal}
         />
-      </SafeAreaView>
+      </View>
     </Modal>
   );
 };
