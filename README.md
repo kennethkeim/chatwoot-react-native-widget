@@ -2,6 +2,8 @@
 chatwoot-react-native-widget
 </h1>
 
+This is a fork of https://www.npmjs.com/package/@chatwoot/react-native-widget
+
 ![](https://img.shields.io/npm/v/@chatwoot/react-native-widget?style=flat)
 ![](https://img.shields.io/npm/dt/@chatwoot/react-native-widget.svg)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
@@ -182,10 +184,3 @@ The whole example is in the `/example` folder.
  </tbody>
 </table>
 
-## Feedback & Contributing
-
-Feel free to send us feedback on [Twitter](https://twitter.com/chatwootapp) or [file an issue](https://github.com/chatwoot/chatwoot-mobile-app/issues).
-
-If there's anything you'd like to chat about, please feel free to join our [Discord](https://discord.gg/cJXdrwS) chat!
-
-_Chatwoot_ &copy; 2017-2023, Chatwoot Inc - Released under the MIT License.
