@@ -2,7 +2,7 @@
 chatwoot-react-native-widget
 </h1>
 
-This is a fork of https://www.npmjs.com/package/@kennethkeim/chatwoot-react-native-widget
+This is a fork of www.npmjs.com/package/@chatwoot/react-native-widget
 
 - **Supported Chatwoot version:** 2.16.0+
 
